@@ -1,7 +1,8 @@
 <?php
     $to = 'ntong283@gmail.com';
     $from = $_POST['name'];
-    $headers = "Content-type: text/html;From: $from";
+    $sender = $_POST['email'];
+    $headers = "Content-type: text/html;From: $from; Reply-To: $sender";
 
     $fields = array();
     $fields["name"] = $_POST['name'];
