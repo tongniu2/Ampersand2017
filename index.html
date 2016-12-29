@@ -277,6 +277,7 @@
 
                     <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 wow fadeInUp" data-wow-delay="0.3s">
                     	<div class="form-group">
+				<!--
                     	    <form action="mailform.php" method="post" id="contact-form">
                     	        <div class="input-field">
                     	            <input type="text" placeholder="Your Name" name="name">
@@ -289,13 +290,30 @@
                     	        </div>
                     	        <button class="btn btn-send" type="submit">Send me</button>
                     	    </form>
-
+-->
+			<form method="post" name="myemailform" action="form-to-email.php">
+	<p>
+		<label for='name'>Enter Name: </label><br>
+		<input type="text" name="name">
+	</p>
+	<p>
+		<label for='email'>Enter Email Address:</label><br>
+		<input type="text" name="email">
+	</p>
+	<p>
+		<label for='message'>Enter Message:</label> <br>
+		<textarea name="message"></textarea>
+	</p>
+	<input type="submit" name='submit' value="submit">
+</form>
+				<!--
                     	    <div id="success">
                     	        <p>Your Message was sent successfully</p>
                     	    </div>
                     	    <div id="error">
                     	        <p>Your Message was not sent successfully</p>
                     	    </div>
+-->
                     	</div>
                     </div>
                 </div>
