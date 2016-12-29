@@ -21,12 +21,12 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'http://formspree.io/your@email.com';//<== update the email address
+$email_from = 'http://formspree.io/ntong283@gmail.com';//<== update the email address
 $email_subject = "New Form submission";
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\n $message".
     
-$to = "http://formspree.io/your@email.com";//<== update the email address
+$to = "http://formspree.io/ntong283@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
