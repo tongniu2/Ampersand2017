@@ -291,19 +291,10 @@
                     	        <button class="btn btn-send" type="submit">Send me</button>
                     	    </form>
 -->
-			<form method="post" name="myemailform" action="http://formspree.io/ntong283@gmail.com">
-	<label for='email'>Enter Email: </label><br>
-				<input type="email" name="_replyto">
-	
-				<p>
-		<label for='name'>Enter Name: </label><br>
-		<input type="text" name="name">
-	</p>
-	<p>
-		<label for='message'>Enter Message:</label> <br>
-		<textarea name="message"></textarea>
-	</p>
-	<input type="submit" value="Send">			
+			<form method="POST" action="http://formspree.io/ntong283@gmail.com">
+  <input type="email" name="email" placeholder="Your email">
+  <textarea name="message" placeholder="Your message"></textarea>
+  <button type="submit">Send</button>
 </form>
 				<!--
                     	    <div id="success">
